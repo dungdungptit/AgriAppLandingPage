@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AgriApp - Ứng dụng Nông nghiệp Thông minh hỗ trợ nông dân Việt Nam quản lý cây trồng, dự báo thời tiết, chẩn đoán sâu bệnh và cập nhật giá thị trường.">
-    <meta name="keywords" content="nông nghiệp, ứng dụng nông nghiệp, dự báo thời tiết, chẩn đoán sâu bệnh, giá nông sản, AgriApp, smart farming">
-    <meta name="author" content="AgriApp Team">
-    <title>AgriApp - Ứng dụng Nông nghiệp Thông minh</title>
+    <meta name="description"
+        content="Điện Biên Smart Agri - Nền tảng nông nghiệp thông minh tỉnh Điện Biên hỗ trợ người dân quản lý cây trồng, dự báo thời tiết, chẩn đoán sâu bệnh và cập nhật giá thị trường.">
+    <meta name="keywords"
+        content="nông nghiệp, ứng dụng nông nghiệp, dự báo thời tiết, chẩn đoán sâu bệnh, giá nông sản, Điện Biên Smart Agri, smart farming">
+    <meta name="author" content="Điện Biên Smart Agri Team">
+    <title>Điện Biên Smart Agri - Nền tảng nông nghiệp thông minh tỉnh Điện Biên</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/icon.png">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <span class="logo-icon">🌱</span>
-                <span class="logo-text">AgriApp</span>
+                <img src="assets/favicon.png" alt="Logo" class="logo-img">
+                <span class="logo-text">Điện Biên Smart Agri</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#home">Trang chủ</a></li>
@@ -51,17 +59,29 @@
                     Trong tầm tay bạn
                 </h1>
                 <p class="hero-description">
-                    Ứng dụng hỗ trợ nông dân Việt Nam quản lý cây trồng, dự báo thời tiết, 
-                    chẩn đoán sâu bệnh bằng AI và cập nhật giá thị trường theo thời gian thực.
+                    Điện Biên Smart Agri được phát triển với sự phối hợp của Sở Khoa học Công nghệ tỉnh Điện Biên, Sở
+                    Nông nghiệp và Môi trường tỉnh Điện Biên cùng Học viện Công nghệ Bưu chính Viễn thông.
                 </p>
                 <div class="hero-buttons">
-                    <a href="https://expo.dev/artifacts/eas/kVqekGesMRxma5iH9YCesm.apk" class="btn btn-primary" download>
+                    <a href="https://expo.dev/artifacts/eas/tF7YQ3cEkmJ5nixoEwSrVs.apk" class="btn btn-primary"
+                        download>
                         <span class="btn-icon">📱</span>
                         Tải APK ngay
                         <span class="btn-badge">Android</span>
                     </a>
-                    <a href="#features" class="btn btn-secondary">
-                        Khám phá tính năng
+                    <a href="#" class="btn btn-disabled" onclick="return false;">
+                        <span class="btn-icon">
+                            <span class="download-icon">
+                                <img src="assets/ios-icon.png" alt="iOS" style="width: 24px; height: 24px;">
+                            </span>
+                        </span>
+                        iOS App
+                        <span class="btn-badge">Đang phát triển</span>
+                    </a>
+                    <a href="https://smart-agri-dienbien.vercel.app/" class="btn btn-primary" target="_blank">
+                        <span class="btn-icon">🌐</span>
+                        Thử nghiệm Web
+                        <span class="btn-badge">Online</span>
                     </a>
                 </div>
                 <div class="hero-stats">
@@ -85,13 +105,15 @@
                         <div class="phone-screen">
                             <div class="app-preview">
                                 <div class="app-header">
-                                    <span>🌱 AgriApp</span>
+                                    <img src="assets/favicon.png" alt="Logo"
+                                        style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;">
+                                    <span>Điện Biên Smart Agri</span>
                                 </div>
                                 <div class="weather-card-preview">
-                                    <div class="weather-icon">☀️</div>
+                                    <div class="weather-icon" style="font-size: 2rem;">☀️</div>
                                     <div class="weather-info">
-                                        <span class="temp">28°C</span>
-                                        <span class="location">Đắk Lắk</span>
+                                        <span class="temp">25°C</span>
+                                        <span class="location">Điện Biên</span>
                                     </div>
                                 </div>
                                 <div class="feature-icons-preview">
@@ -109,139 +131,29 @@
         </div>
         <div class="hero-wave">
             <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+                <path
+                    d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+                    fill="white" />
             </svg>
         </div>
     </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">✨ Tính năng nổi bật</span>
-                <h2 class="section-title">Mọi thứ bạn cần để canh tác thông minh</h2>
-                <p class="section-description">
-                    Được xây dựng với ❤️ dành riêng cho nông dân Việt Nam
-                </p>
-            </div>
-            <div class="features-grid">
-                <!-- Feature 1: Weather -->
-                <div class="feature-card" data-aos="fade-up">
-                    <div class="feature-icon weather-icon-bg">
-                        <span>🌤️</span>
-                    </div>
-                    <h3 class="feature-title">Dự báo Thời tiết</h3>
-                    <p class="feature-description">
-                        Dự báo thời tiết 7 ngày và theo giờ với độ chính xác cao. 
-                        Hiển thị nhiệt độ, độ ẩm, tốc độ gió và xác suất mưa.
-                    </p>
-                    <ul class="feature-list">
-                        <li>📍 Tự động lấy vị trí GPS</li>
-                        <li>📅 Dự báo 7 ngày tới</li>
-                        <li>⏰ Dự báo theo giờ (24h)</li>
-                    </ul>
-                </div>
-
-                <!-- Feature 2: Pest Diagnosis -->
-                <div class="feature-card featured" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-badge">🔥 Hot</div>
-                    <div class="feature-icon pest-icon-bg">
-                        <span>🐛</span>
-                    </div>
-                    <h3 class="feature-title">Chẩn đoán Sâu bệnh AI</h3>
-                    <p class="feature-description">
-                        Chụp ảnh lá cây và để AI phân tích bệnh chỉ trong vài giây. 
-                        Hỗ trợ chẩn đoán cho cây Cà phê và Mắc ca.
-                    </p>
-                    <ul class="feature-list">
-                        <li>📸 Chụp ảnh hoặc chọn từ thư viện</li>
-                        <li>🤖 Phân tích bằng AI thông minh</li>
-                        <li>📋 Lưu lịch sử chẩn đoán</li>
-                    </ul>
-                </div>
-
-                <!-- Feature 3: Market -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-icon market-icon-bg">
-                        <span>📊</span>
-                    </div>
-                    <h3 class="feature-title">Giá Thị trường</h3>
-                    <p class="feature-description">
-                        Cập nhật giá nông sản hàng ngày: cà phê, mắc ca, tiêu, điều... 
-                        Xem biểu đồ xu hướng giá để quyết định thời điểm bán.
-                    </p>
-                    <ul class="feature-list">
-                        <li>💰 Giá cập nhật real-time</li>
-                        <li>📈 Biểu đồ xu hướng giá</li>
-                        <li>📰 Tin mua bán nông sản</li>
-                    </ul>
-                </div>
-
-                <!-- Feature 4: AI Chat -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-icon chat-icon-bg">
-                        <span>💬</span>
-                    </div>
-                    <h3 class="feature-title">Hỏi & Đáp AI</h3>
-                    <p class="feature-description">
-                        Chatbot AI thông minh sẵn sàng giải đáp mọi thắc mắc về 
-                        kỹ thuật canh tác, chăm sóc cây trồng 24/7.
-                    </p>
-                    <ul class="feature-list">
-                        <li>🤖 AI thông minh tích hợp</li>
-                        <li>💾 Lưu lịch sử hội thoại</li>
-                        <li>🔄 Hỗ trợ đa cuộc trò chuyện</li>
-                    </ul>
-                </div>
-
-                <!-- Feature 5: GAP Knowledge -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="feature-icon gap-icon-bg">
-                        <span>📚</span>
-                    </div>
-                    <h3 class="feature-title">Kiến thức GAP</h3>
-                    <p class="feature-description">
-                        Thư viện bài viết về quy trình thực hành nông nghiệp tốt (GAP) 
-                        và hướng dẫn chăm sóc cây trồng chi tiết.
-                    </p>
-                    <ul class="feature-list">
-                        <li>📖 Bài viết chuyên sâu</li>
-                        <li>🌱 Hướng dẫn canh tác</li>
-                        <li>✅ Tiêu chuẩn GAP</li>
-                    </ul>
-                </div>
-
-                <!-- Feature 6: Homepage -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="feature-icon home-icon-bg">
-                        <span>🏠</span>
-                    </div>
-                    <h3 class="feature-title">Trang chủ Thông minh</h3>
-                    <p class="feature-description">
-                        Giao diện tổng hợp hiển thị thời tiết, gợi ý canh tác từ AI, 
-                        cập nhật giá nông sản và tin tức mới nhất.
-                    </p>
-                    <ul class="feature-list">
-                        <li>🎯 Gợi ý canh tác từ AI</li>
-                        <li>📍 Thời tiết theo vị trí</li>
-                        <li>📰 Tin tức nông nghiệp</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
                     <span class="section-badge">💚 Về chúng tôi</span>
-                    <h2 class="section-title">Made with ❤️ for Vietnamese Farmers</h2>
+                    <h2 class="section-title">Nền tảng Nông nghiệp Thông minh</h2>
                     <p class="about-description">
-                        AgriApp được phát triển với sứ mệnh hỗ trợ nông dân Việt Nam tiếp cận công nghệ 
-                        một cách dễ dàng và hiệu quả. Ứng dụng tích hợp các công nghệ AI tiên tiến 
-                        để giúp bạn đưa ra quyết định canh tác chính xác hơn.
+                        Điện Biên Smart Agri được phát triển với sự phối hợp rất tích cực, quyết liệt và trách nhiệm của
+                        Sở KHCN về mặt khoa học, hạ tầng, Sở Nông nghiệp về chuyên môn nông nghiệp, Học viện Công nghệ
+                        Bưu chính viễn thông về mặt kỹ thuật AI. Trong thời gian rất ngắn đã hoàn thiện được phiên bản
+                        demo chạy thử nghiệm.Theo
+                        lời hứa của Thứ trưởng với bí thư tỉnh uỷ trong việc xâydựng app AI nông nghiệp giai đoạn 1 là
+                        hoàn toàn miễn phí. Sau đó, giai đoạn 2 cần phải được hoàn thiện nâng cấp đầy đủ các tính năng
+                        với các bộ cơ sở dữ liệu đầy đủ. Học viện Công nghệ BCVT sẽ phối hợp chặt chẽ, trách nhiệm, tích
+                        cực với Sở KHCN, Sở Nông nghiệp và các sở ban ngành liên quan để tiếp tục hoàn thiện.
+                        .
                     </p>
                     <div class="about-highlights">
                         <div class="highlight-item">
@@ -282,12 +194,126 @@
                             <span class="card-text">Giá tăng +5%</span>
                         </div>
                         <div class="about-image">
-                            <div class="image-placeholder">
-                                <span class="big-icon">🌱</span>
-                                <span class="placeholder-text">AgriApp</span>
-                            </div>
+                            <img src="assets/icon_tro_li_AI.png" alt="AI Assistant" class="ai-assistant-img">
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">✨ Tính năng nổi bật</span>
+                <h2 class="section-title">Mọi thứ bạn cần để canh tác thông minh</h2>
+                <p class="section-description">
+                    Được xây dựng với ❤️ dành riêng cho nông dân Việt Nam
+                </p>
+            </div>
+            <div class="features-grid">
+                <!-- Feature 1: Weather -->
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon weather-icon-bg">
+                        <span>🌤️</span>
+                    </div>
+                    <h3 class="feature-title">Dự báo Thời tiết</h3>
+                    <p class="feature-description">
+                        Dự báo thời tiết 7 ngày và theo giờ với độ chính xác cao.
+                        Hiển thị nhiệt độ, độ ẩm, tốc độ gió và xác suất mưa.
+                    </p>
+                    <ul class="feature-list">
+                        <li>📍 Tự động lấy vị trí GPS</li>
+                        <li>📅 Dự báo 7 ngày tới</li>
+                        <li>⏰ Dự báo theo giờ (24h)</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Pest Diagnosis -->
+                <div class="feature-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-badge">🔥 Hot</div>
+                    <div class="feature-icon pest-icon-bg">
+                        <span>🐛</span>
+                    </div>
+                    <h3 class="feature-title">Chẩn đoán Sâu bệnh AI</h3>
+                    <p class="feature-description">
+                        Chụp ảnh lá cây và để AI phân tích bệnh chỉ trong vài giây.
+                        Hỗ trợ chẩn đoán cho cây Cà phê và Mắc ca.
+                    </p>
+                    <ul class="feature-list">
+                        <li>📸 Chụp ảnh hoặc chọn từ thư viện</li>
+                        <li>🤖 Phân tích bằng AI thông minh</li>
+                        <li>📋 Lưu lịch sử chẩn đoán</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Market -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon market-icon-bg">
+                        <span>📊</span>
+                    </div>
+                    <h3 class="feature-title">Giá Thị trường</h3>
+                    <p class="feature-description">
+                        Cập nhật giá nông sản hàng ngày: cà phê, mắc ca, tiêu, điều...
+                        Xem biểu đồ xu hướng giá để quyết định thời điểm bán.
+                    </p>
+                    <ul class="feature-list">
+                        <li>💰 Giá cập nhật real-time</li>
+                        <li>📈 Biểu đồ xu hướng giá</li>
+                        <li>📰 Tin mua bán nông sản</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4: AI Chat -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon chat-icon-bg">
+                        <span>💬</span>
+                    </div>
+                    <h3 class="feature-title">Hỏi & Đáp AI</h3>
+                    <p class="feature-description">
+                        Chatbot AI thông minh sẵn sàng giải đáp mọi thắc mắc về
+                        kỹ thuật canh tác, chăm sóc cây trồng 24/7.
+                    </p>
+                    <ul class="feature-list">
+                        <li>🤖 AI thông minh tích hợp</li>
+                        <li>💾 Lưu lịch sử hội thoại</li>
+                        <li>🔄 Hỗ trợ đa cuộc trò chuyện</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 5: GAP Knowledge -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon gap-icon-bg">
+                        <span>📚</span>
+                    </div>
+                    <h3 class="feature-title">Kiến thức GAP</h3>
+                    <p class="feature-description">
+                        Thư viện bài viết về quy trình thực hành nông nghiệp tốt (GAP)
+                        và hướng dẫn chăm sóc cây trồng chi tiết.
+                    </p>
+                    <ul class="feature-list">
+                        <li>📖 Bài viết chuyên sâu</li>
+                        <li>🌱 Hướng dẫn canh tác</li>
+                        <li>✅ Tiêu chuẩn GAP</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 6: Homepage -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon home-icon-bg">
+                        <span>🏠</span>
+                    </div>
+                    <h3 class="feature-title">Trang chủ Thông minh</h3>
+                    <p class="feature-description">
+                        Giao diện tổng hợp hiển thị thời tiết, gợi ý canh tác từ AI,
+                        cập nhật giá nông sản và tin tức mới nhất.
+                    </p>
+                    <ul class="feature-list">
+                        <li>🎯 Gợi ý canh tác từ AI</li>
+                        <li>📍 Thời tiết theo vị trí</li>
+                        <li>📰 Tin tức nông nghiệp</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -301,27 +327,54 @@
                 <span class="section-badge light">📲 Tải xuống ngay</span>
                 <h2 class="section-title">Bắt đầu hành trình<br>Nông nghiệp Thông minh</h2>
                 <p class="download-description">
-                    Tải ứng dụng AgriApp miễn phí và trải nghiệm công nghệ 
+                    Tải ứng dụng Điện Biên Smart Agri miễn phí và trải nghiệm công nghệ
                     AI hỗ trợ canh tác ngay hôm nay!
                 </p>
-                <a href="https://expo.dev/artifacts/eas/kVqekGesMRxma5iH9YCesm.apk" class="btn btn-download" download>
-                    <div class="btn-content">
-                        <span class="download-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 16L12 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M9 13L12 16L15 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M3 15V16C3 18.2091 4.79086 20 7 20H17C19.2091 20 21 18.2091 21 16V15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </span>
-                        <div class="btn-text">
-                            <span class="btn-small">Tải xuống cho</span>
-                            <span class="btn-large">Android APK</span>
+                <div class="download-buttons">
+                    <a href="https://expo.dev/artifacts/eas/tF7YQ3cEkmJ5nixoEwSrVs.apk" class="btn btn-download"
+                        download>
+                        <div class="btn-content">
+                            <span class="download-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 16L12 8" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M9 13L12 16L15 13" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3 15V16C3 18.2091 4.79086 20 7 20H17C19.2091 20 21 18.2091 21 16V15"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <div class="btn-text">
+                                <span class="btn-small">Tải xuống cho</span>
+                                <span class="btn-large">Android APK</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                    <a href="#" class="btn btn-download btn-ios-disabled" onclick="return false;">
+                        <div class="btn-content">
+                            <span class="download-icon">
+                                <img src="assets/ios-icon.png" alt="iOS" style="width: 24px; height: 24px;">
+                            </span>
+                            <div class="btn-text">
+                                <span class="btn-small">Đang phát triển</span>
+                                <span class="btn-large">iOS App</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://smart-agri-dienbien.vercel.app/" class="btn btn-download" target="_blank">
+                        <div class="btn-content">
+                            <span class="download-icon" style="font-size: 1.5rem;">🌐</span>
+                            <div class="btn-text">
+                                <span class="btn-small">Trải nghiệm ngay</span>
+                                <span class="btn-large">Web App</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
                 <p class="download-note">
                     <span class="note-icon">💡</span>
-                    Yêu cầu Android 6.0 trở lên
+                    Android 6.0+ | iOS đang phát triển
                 </p>
             </div>
         </div>
@@ -333,13 +386,24 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="#" class="logo">
-                        <span class="logo-icon">🌱</span>
-                        <span class="logo-text">AgriApp</span>
+                        <img src="assets/favicon.png" alt="Logo" class="logo-img">
+                        <span class="logo-text">Điện Biên Smart Agri</span>
                     </a>
                     <p class="footer-tagline">
-                        Ứng dụng Nông nghiệp Thông minh<br>
-                        Made with ❤️ for Vietnamese Farmers
+                        Nền tảng nông nghiệp thông minh tỉnh Điện Biên
                     </p>
+                    <div class="footer-buttons">
+                        <a href="https://expo.dev/artifacts/eas/tF7YQ3cEkmJ5nixoEwSrVs.apk"
+                            class="btn btn-primary btn-sm" download>
+                            <span class="btn-icon">📱</span>
+                            Tải APK
+                        </a>
+                        <a href="https://smart-agri-dienbien.vercel.app/" class="btn btn-primary btn-sm"
+                            target="_blank">
+                            <span class="btn-icon">🌐</span>
+                            Web App
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
@@ -363,18 +427,18 @@
                     <div class="footer-column">
                         <h4>Liên hệ</h4>
                         <ul>
-                            <li><a href="https://github.com/dungdungptit/agri_smart_app" target="_blank">GitHub</a></li>
                             <li><a href="mailto:support@agriapp.vn">Email hỗ trợ</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 AgriApp. Tất cả quyền được bảo lưu.</p>
+                <p>&copy; 2025 Điện Biên Smart Agri. Tất cả quyền được bảo lưu.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
